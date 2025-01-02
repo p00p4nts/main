@@ -1,10 +1,148 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <title>Hello world i am brendon i am a baby and a chicken</title>
-    </head>
-    <body>
-        <h1>hello welcome to my <strong>MAIN</strong>website</h1>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hello World | Brendon</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Orbitron', sans-serif;
+            background: linear-gradient(135deg, #1e90ff, #ff69b4);
+            color: white;
+            overflow-x: hidden;
+        }
 
-    </body>
+        header {
+            background: rgba(0, 0, 0, 0.8);
+            padding: 10px 20px;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            border-bottom: 3px solid #00ffff;
+            box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
+        }
+
+        .menu {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            padding: 0;
+            margin: 0;
+        }
+
+        .menu li {
+            margin: 0 15px;
+        }
+
+        .menu a {
+            text-decoration: none;
+            color: white;
+            font-size: 18px;
+            padding: 10px 15px;
+            border-radius: 15px;
+            border: 2px solid #00ffff;
+            transition: all 0.3s ease-in-out;
+            background: transparent;
+        }
+
+        .menu a:hover {
+            background: #00ffff;
+            color: black;
+            transform: scale(1.2) rotate(2deg);
+            box-shadow: 0 0 10px #00ffff, 0 0 20px #ff69b4;
+        }
+
+        .hero {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            text-align: center;
+            background: radial-gradient(circle, rgba(0,0,0,0.7) 20%, rgba(255,255,255,0.1) 100%);
+            border: 5px dashed #00ffff;
+            border-radius: 25px;
+            margin: 20px;
+        }
+
+        .hero h1 {
+            font-size: 3.5em;
+            margin: 0.5em 0;
+            text-shadow: 0 0 10px #ff69b4, 0 0 20px #00ffff;
+        }
+
+        .hero p {
+            font-size: 1.5em;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            background: rgba(0, 0, 0, 0.8);
+            border-top: 3px solid #00ffff;
+            box-shadow: 0 -5px 10px rgba(0, 0, 0, 0.5);
+        }
+
+        .reveal-message {
+            display: none;
+            font-size: 1.5em;
+            color: #00ffff;
+            margin-top: 20px;
+            animation: fadeIn 0.5s ease-in-out;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+
+        .hero:hover .reveal-message {
+            display: block;
+        }
+
+        @media (max-width: 768px) {
+            .menu a {
+                font-size: 16px;
+                padding: 8px 10px;
+            }
+
+            .hero h1 {
+                font-size: 2.5em;
+            }
+
+            .hero p {
+                font-size: 1.2em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul class="menu">
+                <li><a href="#home">no home</a></li>
+                <li><a href="#about">about</a></li>
+                <li><a href="https://p00p4nts.github.io" target="_blank">game</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home" class="hero">
+            <h1>Welcome to brendonss <strong>Main</strong> Website</h1>
+            <p><strong>me is u u is me</strong></p>
+            <div class="reveal-message">Happy u</div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Brendon. All rights reserved.</p>
+    </footer>
+
+    <script>
+        // Additional interactivity if needed
+    </script>
+</body>
 </html>
